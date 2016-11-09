@@ -6,6 +6,17 @@ Simple API to log the performance attributes of any application.
 
 Below example has four layers - UI, MIddleware, CLOUD and DB. All you have to do is, initialize the Watcher and keep splitting. 
 
+<b>Initialize</b>
+PerformanceWatchAPI watcher = new PerformanceWatchAPI("corelationid-abc123");
+
+<b>Start</b>
+watcher.start("UI.getSearchResults()");
+
+<b>Split Response time</b>
+watcher.splitWatch("UI.searchFormValidate()");
+
+<b>end the transaction</b>
+watcher.end("UI.getSearchResults()"); 
 
 
 # Sample Output
