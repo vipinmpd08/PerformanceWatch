@@ -24,7 +24,7 @@ watcher.start("UI.getSearchResults()");
 watcher.splitWatch("UI.searchFormValidate()");
 ```
 
-<b>end the transaction</b>
+<b>End transaction</b>
 
 ```
 watcher.end("UI.getSearchResults()"); 
